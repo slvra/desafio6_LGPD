@@ -31,18 +31,6 @@ function Post(form) {
             document.getElementById("texto1").innerHTML = check.mensagem;
 }
 
-function openModal(){
-    const modal = document.getElementById('modal-container')
-    modal.classList.add('mostrar')
-
-    modal.addEventListener('click', (e) =>{
-        if (e.target.id == 'modal-container' || e.target.id == "fechar"){
-            modal.classList.remove('mostrar')
-            localStorage.fechaModal = 'modal-container'
-        }
-    })
-}
-
 function Enviar() {
 
     // var nome = document.getElementById("nomeid");
