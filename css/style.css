@@ -118,7 +118,7 @@ footer div {
     margin-right: 40px;
 }
 
-button:hover {
+/* button:hover {
     background: #1b357e;
 }
 button {
@@ -126,7 +126,7 @@ button {
     color: #fff;
     border: 0px;
     border-radius: 10px;
-}
+} */
 
 .active{
     display: inline-block !important;

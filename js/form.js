@@ -1,6 +1,10 @@
 
 let check;
 
+if (document.getElementById("lgpd").checked) {
+    document.getElementById("enviar").disabled = false;
+}
+
 class contato {
     constructor(nome, email, telefone, contato, mensagem) {
         this.nome = nome;
@@ -12,7 +16,6 @@ class contato {
 }
 
 function Post(form) {
-    // console.log('chamou post');
 
   check = new contato(form.elements.namedItem("nome").value,
             form.elements.namedItem("email").value, 
@@ -21,27 +24,26 @@ function Post(form) {
             form.elements.namedItem("mensagem").value);
 
             console.log(check);
-
-            document.getElementById("consolidacao").style.display = "block"; // mostrar a div dos dados digitados
-
-            document.getElementById("nome").innerHTML = check.nome;
-            document.getElementById("email").innerHTML = check.email;
-            document.getElementById("telefone").innerHTML = check.telefone;
-            document.getElementById("contato").innerHTML = check.contato;
-            document.getElementById("texto1").innerHTML = check.mensagem;
+            Enviar();
 }
 
 function Enviar() {
-
-    // var nome = document.getElementById("nomeid");
 
     if (check.nome != "") {
         alert('Obrigado sr(a) ' + check.nome + ' os seus dados foram encaminhados com sucesso');
             window.location.reload();
     }
-
 }
 
-function Hide() {
-    document.getElementById("consolidacao").style.display = "none";
+
+Function Interface () {
+    let el = document.getElementById("lgpd");
+    if (el.checked) {
+        document.getElementById("enviar").disabled = false;
+        el.classList.remove('desabilitado');
+
+    } else 
+        document.getElementById("enviar").disabled = true;
+        l.classList.add('testando');
+    console.log(el.checked);
 }

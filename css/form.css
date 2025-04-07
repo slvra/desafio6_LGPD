@@ -39,14 +39,7 @@ main div {
 h2 {
     text-align: left;
     font-weight: 800;
-}
-
-
-button {
-    width: 200px;
-    height: 40px;
-    margin-right: 8px;
-    float: right;
+    margin: 20px 0;
 }
 
 .titulo {
@@ -58,11 +51,20 @@ textarea{
     resize: none;
 }
 
+button {
+    width: 150px;
+    height: 40px;
+    margin-right: 15px;
+    float: right;
+}
+
+
+
 .form-button{
     display: block;
     /* width: 22%; */
     padding: 10px;
-    margin: 20px auto;
+    margin: 20px ;
     background-color: #1351d8;
     color: white;
     text-align: center;
@@ -76,22 +78,6 @@ textarea{
     transform: scale(1.2);
 }
 
-#consolidacao{
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border: #b8b3b3 1px solid;
-    background-color: #ffffff;
-    text-align: center;
-    align-items: center;
-    border-radius: 15px;
-    width: 17vw;
-    height: fit-content;
-    min-height: 40vh;
-    padding: 0;
-    box-shadow: #000000 0px 0px 17px;
-}
 
 #h3-title{
     
@@ -100,43 +86,45 @@ textarea{
     padding: 5%;
 }
 
-table{
-    max-width: 90%;
-    width: 85%;
-    border-collapse: collapse;
-    margin: auto;
-    border-radius: 5px;
-
-
-}
-
-td{
-    background-color: #ffffff;
+.termos{
+    color: #807d7d;
+    display: block;
+    width: 315px;
     text-align: left;
-    padding: 7px;
-    border: #dcdada 1px solid;
-
-
+    margin-left: 8px;
+    font-size: 11px;
+    text-align: justify;
+    margin-bottom: 10px;
 }
 
-#consolidacao-button-chek, #consolidacao-button-exit{
-    width: fit-content;
-    margin: 2; /* precisa tirar?*/
-    padding: 0;
-    background-color: #ffffff;
-    color: dimgray;
+.checkbox{
+    padding: 1px;
+    display: block;
+    font-size: small;
+    text-align: left;
+    margin-left: 4px;
+    font-size: 13px;
+}
+
+.checkbox input, label{
+    vertical-align: middle;
+}
+
+.borda{
+    border: solid 1px #5647f52d;
+    padding: 19px 25px 10px 25px;
+    border-radius: 22px;
+    box-shadow: #2317ca33 10px 10px 10px;
+}
+
+.desabilitado{
+    background-color: #25262877;
+    color: #fbfbfbb3;
+    display: block;
+    padding: 10px;
+    margin: 20px ;
+    text-align: center;
     border: none;
-    border: #143e99 solid 1px;
-    box-shadow: #092c78 1px 1px 1px;
-    cursor: pointer;
-    font: 16px; /* precisa tirar?*/
+    font: 16px;
+    border-radius: 10px;
 }
-
-#consolidacao-button-chek, #consolidacao-button-exit:hover {
-    background-color: #1351d8;
-    color: white;
-}
-
-/* .w-6 h-6 text-gray-800 dark:text-white{
-    margin: 0;
-} */
