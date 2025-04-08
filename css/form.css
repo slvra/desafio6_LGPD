@@ -73,11 +73,11 @@ button {
     font: 16px;
     border-radius: 10px;
 }
-.form-button:hover{
+
+.form-button:not([disabled]):hover{
     background-color: #092c78;
     transform: scale(1.2);
 }
-
 
 #h3-title{
     
@@ -117,7 +117,7 @@ button {
     box-shadow: #2317ca33 10px 10px 10px;
 }
 
-.desabilitado{
+button.form-button:disabled{
     background-color: #25262877;
     color: #fbfbfbb3;
     display: block;
@@ -127,4 +127,5 @@ button {
     border: none;
     font: 16px;
     border-radius: 10px;
+    cursor: not-allowed;
 }
